@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareAnywhere Kits (CAWK) - Healthcare Anywhere, Anytime</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+        <p>Loading CAWK...</p>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/cwaklogo.jpg" alt="CAWK Logo" class="logo-img" style="border-radius: 50%;">
+                <span class="logo-text">CAWK</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#order">Order Now</a></li>
+            </ul>
+            <a href="#order" class="btn btn-nav">Order Now</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-check-circle"></i> Trusted for Emergency Readiness
+            </div>
+            
+            <h1 class="hero-title">
+                Healthcare <span class="text-gradient">Anywhere</span>, Anytime
+            </h1>
+            
+            <p class="hero-subtitle">
+                Be prepared for emergencies with CAWK - your portable healthcare solution that fits in your bag, car, or home.
+            </p>
+            
+            <div class="hero-cta">
+                <a href="#order" class="btn btn-primary btn-large">
+                    <i class="fas fa-shopping-cart"></i> Order Now
+                </a>
+                <a href="#product" class="btn btn-secondary btn-large">
+                    <i class="fas fa-play-circle"></i> Learn More
+                </a>
+            </div>
+            
+            <div class="hero-trust">
+                <div class="trust-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>Fast Delivery</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Secure Payment</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-heart"></i>
+                    <span>Quality Care</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose CAWK?</h2>
+                <p class="section-subtitle">Everything you need for emergency healthcare readiness</p>
+            </div>
+            
+            <!-- About CAWK Mission Statement -->
+            <div class="about-cawk-box" style="background: rgba(10, 102, 194, 0.05); border: 1px solid rgba(10, 102, 194, 0.1); border-radius: var(--border-radius-lg); padding: 32px; margin-bottom: 40px; text-align: left;">
+                <h3 style="color: var(--primary-blue); margin-bottom: 16px; font-size: 1.25rem;"><i class="fas fa-heartbeat" style="margin-right: 8px;"></i>Our Mission</h3>
+                <p style="color: var(--text-gray); font-size: 1.05rem; line-height: 1.6; margin-bottom: 16px;">
+                    CareAnywhere Kits (CAWK) was born from a simple belief: <strong>nobody should be caught off-guard during an emergency.</strong> We recognized a critical gap in daily safety—most people travel, ride, and commute without proper medical preparedness simply because traditional first-aid is bulky, disorganized, and complicated.
+                </p>
+                <p style="color: var(--text-gray); font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">
+                    We design ultra-compact, purposefully-curated healthcare kits tailored directly to your lifestyle. Whether you are navigating dense city traffic on a motorcycle or taking a cross-country family road trip, CAWK ensures that a premium, life-saving healthcare solution is always within an arm's reach.
+                </p>
+                
+                <h4 style="color: var(--text-dark); margin-bottom: 12px; font-size: 1.1rem;">The CAWK Standard:</h4>
+                <ul style="color: var(--text-gray); margin-left: 20px; font-size: 1.05rem; line-height: 1.6; margin-bottom: 16px;">
+                    <li style="margin-bottom: 8px;"><strong style="color: var(--text-dark);">Clinically Vetted:</strong> Every item in a CAWK kit is strictly curated by healthcare professionals.</li>
+                    <li style="margin-bottom: 8px;"><strong style="color: var(--text-dark);">Extreme Durability:</strong> Weather-resistant, crush-proof casing built to survive harsh travel conditions.</li>
+                    <li><strong style="color: var(--text-dark);">Zero Clutter:</strong> We replaced generic fluff with actual trauma-ready, life-saving tools.</li>
+                </ul>
+            </div>
+            
+            <!-- Founder's Note -->
+            <div class="founder-note" style="background: var(--background-white); border-left: 4px solid var(--primary-blue); padding: 24px 32px; margin-bottom: 48px; box-shadow: var(--shadow-sm); border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0;">
+                <p style="color: var(--text-dark); font-size: 1.1rem; font-style: italic; line-height: 1.6; margin-bottom: 16px;">
+                    "We noticed that traditional first-aid kits were either too bulky to carry daily, or too basic to actually help in a real medical emergency. CAWK was created specifically for the road, the ride, and the daily commute—so you never have to compromise on safety when you leave your home."
+                </p>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <div style="width: 48px; height: 48px; background: var(--primary-blue-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-blue); font-size: 1.25rem;">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div>
+                        <h5 style="color: var(--text-dark); font-size: 1rem; margin-bottom: 2px;">Pavan</h5>
+                        <p style="color: var(--text-gray); font-size: 0.875rem;">Founder, CareAnywhere Kits</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-suitcase"></i>
+                    </div>
+                    <h3>Portable & Compact</h3>
+                    <p>Designed to fit anywhere - your car, backpack, or home. Healthcare on the go has never been easier.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-first-aid"></i>
+                    </div>
+                    <h3>Emergency Ready</h3>
+                    <p>Be prepared for any situation with our comprehensive first aid and healthcare essentials.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Essential Kit</h3>
+                    <p>Curated selection of medical supplies you actually need, nothing you don't.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3>Affordable Care</h3>
+                    <p>Premium quality healthcare supplies at prices that make sense for everyone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="product" id="product">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">The CAWK Kit</h2>
+                <p class="section-subtitle">Your complete healthcare solution in one box</p>
+            </div>
+            
+            <!-- Rider Care Kit -->
+            <div class="product-showcase rider-kit">
+                <div class="product-image">
+                    <img src="assets/rider-kit.png" alt="Rider Care Kit" style="width: 100%; border-radius: var(--border-radius-lg); object-fit: cover; aspect-ratio: 4/5; box-shadow: var(--shadow-md); border: 1px solid var(--border-gray);">
+                    <div class="product-badge" style="background: #E11D48;">New Arrival</div>
+                </div>
+                
+                <div class="product-details">
+                    <div style="color: #E11D48; font-weight: 800; font-size: 0.875rem; letter-spacing: 0.05em; margin-bottom: 8px;">RIDE SAFE. RIDE SMART.</div>
+                    <h3 class="product-name">Rider Care Kit</h3>
+                    <p style="color: var(--text-gray); font-size: 1.125rem; margin-bottom: 24px; font-weight: 500;">Your Ultimate Rider Safety Companion</p>
+                    
+                    <!-- Pricing hidden as requested -->
+                    
+                    <div class="product-features">
+                        <h4>Key Features:</h4>
+                        <ul class="features-list">
+                            <li><i class="fas fa-plus-square"></i> Emergency Essentials (Trauma supplies for critical moments)</li>
+                            <li><i class="fas fa-backpack"></i> Compact & Travel Ready (Fits perfectly in rider pouches)</li>
+                            <li><i class="fas fa-motorcycle"></i> Built for Riders (Specific items tailored for road incidents)</li>
+                            <li><i class="fas fa-cloud-showers-heavy"></i> Durable & Weather Resistant (Keeps supplies safe from rain)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-urgency" style="background: #FEF2F2; color: #991B1B; border-color: #FCA5A5;">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Prepared for Every Ride. Get yours today.</span>
+                    </div>
+                    
+                    <a href="#order" class="btn btn-primary btn-large btn-glow" style="background: #111;" onclick="document.getElementById('kitType').value='Rider Kit'; document.getElementById('quantity').value='1'; updateOrderSummary();">
+                        <i class="fas fa-shopping-cart"></i> Buy Rider Kit
+                    </a>
+                </div>
+            </div>
+
+            <!-- Car Travellers Care Kit -->
+            <div class="product-showcase car-kit" style="margin-top: 100px;">
+                <div class="product-image">
+                    <img src="assets/car-kit.png" alt="Car Travellers Care Kit" style="width: 100%; border-radius: var(--border-radius-lg); object-fit: cover; aspect-ratio: 4/5; box-shadow: var(--shadow-md); border: 1px solid var(--border-gray);">
+                    <div class="product-badge" style="background: #0284c7;">Family Favorite</div>
+                </div>
+                
+                <div class="product-details">
+                    <div style="color: #0284c7; font-weight: 800; font-size: 0.875rem; letter-spacing: 0.05em; margin-bottom: 8px;">TRAVEL SAFE. DRIVE SMART.</div>
+                    <h3 class="product-name">Car Travellers Care Kit</h3>
+                    <p style="color: var(--text-gray); font-size: 1.125rem; margin-bottom: 24px; font-weight: 500;">Your Essential Car Travel Safety Kit</p>
+                    
+                    <!-- Pricing hidden as requested -->
+                    
+                    <div class="product-features">
+                        <h4>Key Features:</h4>
+                        <ul class="features-list">
+                            <li><i class="fas fa-plus-square"></i> Emergency Essentials (Comprehensive medical supplies for families)</li>
+                            <li><i class="fas fa-box"></i> Glovebox Ready (Compact design to fit your car interior easily)</li>
+                            <li><i class="fas fa-car-crash"></i> Built for Highway Travel (Roadside injury & burn care items)</li>
+                            <li><i class="fas fa-temperature-low"></i> Durable & Heat Resistant (Safe storage in trunk or cabin)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-urgency" style="background: #F0F9FF; color: #0369A1; border-color: #BAE6FD;">
+                        <i class="fas fa-route"></i>
+                        <span>Ready for any road trip. Free shipping included!</span>
+                    </div>
+                    
+                    <a href="#order" class="btn btn-primary btn-large btn-glow" style="background: #0284c7;" onclick="document.getElementById('kitType').value='Car Kit'; document.getElementById('quantity').value='1'; updateOrderSummary();">
+                        <i class="fas fa-shopping-cart"></i> Buy Car Kit
+                    </a>
+                </div>
+            </div>
+
+            <!-- Daily Travellers Care Kit -->
+            <div class="product-showcase daily-kit" style="margin-top: 100px;">
+                <div class="product-image">
+                    <img src="assets/daily-kit.png" alt="Daily Travellers Care Kit" style="width: 100%; border-radius: var(--border-radius-lg); object-fit: cover; aspect-ratio: 4/5; box-shadow: var(--shadow-md); border: 1px solid var(--border-gray);">
+                    <div class="product-badge" style="background: #ea580c;">Everyday Essential</div>
+                </div>
+                
+                <div class="product-details">
+                    <div style="color: #ea580c; font-weight: 800; font-size: 0.875rem; letter-spacing: 0.05em; margin-bottom: 8px;">EVERYDAY SAFETY. EVERYDAY CARE.</div>
+                    <h3 class="product-name">Daily Travellers Care Kit</h3>
+                    <p style="color: var(--text-gray); font-size: 1.125rem; margin-bottom: 24px; font-weight: 500;">Your Daily Travel Companion</p>
+                    
+                    <!-- Pricing hidden as requested -->
+                    
+                    <div class="product-features">
+                        <h4>Key Features:</h4>
+                        <ul class="features-list">
+                            <li><i class="fas fa-clock"></i> Perfect for Daily Commute (Fits into any standard backpack or purse)</li>
+                            <li><i class="fas fa-suitcase"></i> Compact & Easy to Carry (Lightweight but fully equipped)</li>
+                            <li><i class="fas fa-bus"></i> For Bus • Train • Bike • Walk (Multi-modal transit protection)</li>
+                            <li><i class="fas fa-briefcase-medical"></i> Essential Safety Kit (Bandages, wipes & everyday first-aid)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-urgency" style="background: #FFF7ED; color: #C2410C; border-color: #FFEDD5;">
+                        <i class="fas fa-walking"></i>
+                        <span>Never leave home without it. Keep yourself and others safe!</span>
+                    </div>
+                    
+                    <a href="#order" class="btn btn-primary btn-large btn-glow" style="background: #ea580c;" onclick="document.getElementById('kitType').value='Daily Kit'; document.getElementById('quantity').value='1'; updateOrderSummary();">
+                        <i class="fas fa-shopping-cart"></i> Buy Daily Kit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Order your CAWK kit in 3 simple steps</p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-form"></i>
+                    </div>
+                    <h3>Fill Your Details</h3>
+                    <p>Complete the simple order form with your shipping information</p>
+                </div>
+                
+                <div class="step-connector">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>Click Order</h3>
+                    <p>Submit your order and get redirected to WhatsApp instantly</p>
+                </div>
+                
+                <div class="step-connector">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Confirm on WhatsApp</h3>
+                    <p>Complete payment and confirm delivery details with our team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="order" id="order">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Order Your CAWK Kit</h2>
+                <p class="section-subtitle">Fill in your details and we'll contact you on WhatsApp</p>
+            </div>
+            
+            <div class="order-wrapper">
+                <div class="order-form-container" data-aos="zoom-in">
+                    <form class="order-form" id="orderForm">
+                        <div class="form-group">
+                            <label for="fullName">
+                                <i class="fas fa-user"></i> Full Name *
+                            </label>
+                            <input 
+                                type="text" 
+                                id="fullName" 
+                                name="fullName" 
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Phone Number *
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="+91 XXXXX XXXXX"
+                                pattern="[0-9]{10}"
+                                title="Please enter a valid 10-digit phone number"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">
+                                <i class="fas fa-map-marker-alt"></i> Address *
+                            </label>
+                            <textarea 
+                                id="address" 
+                                name="address" 
+                                rows="4"
+                                placeholder="Enter your complete shipping address"
+                                required
+                            ></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="kitType">
+                                <i class="fas fa-briefcase-medical"></i> Select Kit *
+                            </label>
+                            <select id="kitType" name="kitType" required>
+                                <option value="Rider Kit">Rider Care Kit</option>
+                                <option value="Car Kit">Car Travellers Care Kit</option>
+                                <option value="Daily Kit">Daily Travellers Care Kit</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="quantity">
+                                <i class="fas fa-box"></i> Quantity *
+                            </label>
+                            <select id="quantity" name="quantity" required>
+                                <option value="1">1 Kit</option>
+                                <option value="2">2 Kits (Save 10%)</option>
+                                <option value="3">3 Kits (Save 15%)</option>
+                                <option value="5">5 Kits (Save 20%)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-summary" style="display: none;">
+                            <h4>Order Details</h4>
+                            <div class="summary-row">
+                                <span>Note:</span>
+                                <span>Prices will be shared via WhatsApp.</span>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                        
+                        <p class="form-note">
+                            <i class="fas fa-lock"></i> Your information is secure and will only be used for order processing.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram" id="instagram">
+        <div class="container">
+            <div class="insta-content" data-aos="fade-up">
+                <h2>Follow Us on Instagram</h2>
+                <p>Stay updated with latest products, health tips, and customer stories</p>
+                <a href="https://www.instagram.com/cawk.in/" target="_blank" class="btn btn-instagram">
+                    <i class="fab fa-instagram"></i> @cawk.in
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="assets/cwaklogo.jpg" alt="CAWK Logo" class="logo-img" style="border-radius: 50%;">
+                        <span class="logo-text">CAWK</span>
+                    </div>
+                    <p>Healthcare Anywhere, Anytime</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#benefits">Benefits</a>
+                        <a href="#product">Product</a>
+                        <a href="#how-it-works">How It Works</a>
+                        <a href="#order">Order</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="tel:+919535917824">
+                            <i class="fas fa-phone"></i> +91 9535917824
+                        </a>
+                        <a href="https://wa.me/919535917824" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Us
+                        </a>
+                        <a href="https://www.instagram.com/cawk.in/" target="_blank">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CareAnywhere Kits (CAWK). All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> for healthcare accessibility</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919535917824" target="_blank" class="floating-whatsapp" id="floatingWhatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
